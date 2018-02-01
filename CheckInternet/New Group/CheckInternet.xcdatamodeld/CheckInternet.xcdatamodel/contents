@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Connected" representedClassName="Connected" syncable="YES">
+        <attribute name="connectedTime" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Connected"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="InternetDown" representedClassName="InternetDown" syncable="YES">
+        <attribute name="downTime" optional="YES" attributeType="String" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="InternetDown"/>
+        </fetchedProperty>
+    </entity>
+    <elements>
+        <element name="InternetDown" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Connected" positionX="81" positionY="-17" width="128" height="86"/>
+    </elements>
+</model>

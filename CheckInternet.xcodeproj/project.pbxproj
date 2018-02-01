@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59C0EB07201D08F200D4B055 /* InternetDown+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0EB05201D08F200D4B055 /* InternetDown+CoreDataClass.swift */; };
+		59C0EB08201D08F200D4B055 /* InternetDown+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0EB06201D08F200D4B055 /* InternetDown+CoreDataProperties.swift */; };
+		59C0EB0B201D33F000D4B055 /* ConnectedTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C0EB0A201D33F000D4B055 /* ConnectedTimeCell.swift */; };
+		59D49B8A201EFF0C00989623 /* Connected+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D49B88201EFF0C00989623 /* Connected+CoreDataClass.swift */; };
+		59D49B8B201EFF0C00989623 /* Connected+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D49B89201EFF0C00989623 /* Connected+CoreDataProperties.swift */; };
 		59FADF88201CE2DF005AB594 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FADF87201CE2DF005AB594 /* AppDelegate.swift */; };
-		59FADF8A201CE2DF005AB594 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FADF89201CE2DF005AB594 /* ViewController.swift */; };
 		59FADF8D201CE2DF005AB594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FADF8B201CE2DF005AB594 /* Main.storyboard */; };
 		59FADF90201CE2DF005AB594 /* CheckInternet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59FADF8E201CE2DF005AB594 /* CheckInternet.xcdatamodeld */; };
 		59FADF92201CE2DF005AB594 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FADF91201CE2DF005AB594 /* Assets.xcassets */; };
 		59FADF95201CE2DF005AB594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59FADF93201CE2DF005AB594 /* LaunchScreen.storyboard */; };
 		59FADFA0201CE2E0005AB594 /* CheckInternetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FADF9F201CE2E0005AB594 /* CheckInternetTests.swift */; };
+		59FADFAB201CE323005AB594 /* Check_InternetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FADFAA201CE323005AB594 /* Check_InternetVC.swift */; };
+		59FADFAD201CF425005AB594 /* Internet_Down_TimingTblVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FADFAC201CF425005AB594 /* Internet_Down_TimingTblVC.swift */; };
+		59FADFB1201CF48A005AB594 /* Internet_Down_TimingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FADFB0201CF48A005AB594 /* Internet_Down_TimingCell.swift */; };
+		59FADFB3201CF645005AB594 /* Checking_Internet_Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FADFB2201CF645005AB594 /* Checking_Internet_Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59C0EB05201D08F200D4B055 /* InternetDown+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InternetDown+CoreDataClass.swift"; sourceTree = "<group>"; };
+		59C0EB06201D08F200D4B055 /* InternetDown+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InternetDown+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		59C0EB0A201D33F000D4B055 /* ConnectedTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedTimeCell.swift; sourceTree = "<group>"; };
+		59D49B88201EFF0C00989623 /* Connected+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connected+CoreDataClass.swift"; sourceTree = "<group>"; };
+		59D49B89201EFF0C00989623 /* Connected+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Connected+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		59FADF84201CE2DF005AB594 /* CheckInternet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckInternet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FADF87201CE2DF005AB594 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59FADF89201CE2DF005AB594 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		59FADF8C201CE2DF005AB594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		59FADF8F201CE2DF005AB594 /* CheckInternet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckInternet.xcdatamodel; sourceTree = "<group>"; };
 		59FADF91201CE2DF005AB594 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,6 +50,10 @@
 		59FADF9B201CE2E0005AB594 /* CheckInternetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckInternetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FADF9F201CE2E0005AB594 /* CheckInternetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInternetTests.swift; sourceTree = "<group>"; };
 		59FADFA1201CE2E0005AB594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59FADFAA201CE323005AB594 /* Check_InternetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Check_InternetVC.swift; sourceTree = "<group>"; };
+		59FADFAC201CF425005AB594 /* Internet_Down_TimingTblVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet_Down_TimingTblVC.swift; sourceTree = "<group>"; };
+		59FADFB0201CF48A005AB594 /* Internet_Down_TimingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet_Down_TimingCell.swift; sourceTree = "<group>"; };
+		59FADFB2201CF645005AB594 /* Checking_Internet_Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checking_Internet_Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59C0EB09201D08FF00D4B055 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				59D49B88201EFF0C00989623 /* Connected+CoreDataClass.swift */,
+				59D49B89201EFF0C00989623 /* Connected+CoreDataProperties.swift */,
+				59FADF8E201CE2DF005AB594 /* CheckInternet.xcdatamodeld */,
+				59C0EB05201D08F200D4B055 /* InternetDown+CoreDataClass.swift */,
+				59C0EB06201D08F200D4B055 /* InternetDown+CoreDataProperties.swift */,
+			);
+			name = CoreData;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		59FADF7B201CE2DF005AB594 = {
 			isa = PBXGroup;
 			children = (
@@ -79,13 +108,17 @@
 		59FADF86201CE2DF005AB594 /* CheckInternet */ = {
 			isa = PBXGroup;
 			children = (
+				59C0EB0A201D33F000D4B055 /* ConnectedTimeCell.swift */,
+				59FADFB0201CF48A005AB594 /* Internet_Down_TimingCell.swift */,
+				59FADFAA201CE323005AB594 /* Check_InternetVC.swift */,
+				59FADFB2201CF645005AB594 /* Checking_Internet_Functions.swift */,
 				59FADF87201CE2DF005AB594 /* AppDelegate.swift */,
-				59FADF89201CE2DF005AB594 /* ViewController.swift */,
 				59FADF8B201CE2DF005AB594 /* Main.storyboard */,
+				59FADFAC201CF425005AB594 /* Internet_Down_TimingTblVC.swift */,
 				59FADF91201CE2DF005AB594 /* Assets.xcassets */,
 				59FADF93201CE2DF005AB594 /* LaunchScreen.storyboard */,
 				59FADF96201CE2DF005AB594 /* Info.plist */,
-				59FADF8E201CE2DF005AB594 /* CheckInternet.xcdatamodeld */,
+				59C0EB09201D08FF00D4B055 /* CoreData */,
 			);
 			path = CheckInternet;
 			sourceTree = "<group>";
@@ -202,9 +235,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59FADF8A201CE2DF005AB594 /* ViewController.swift in Sources */,
+				59D49B8B201EFF0C00989623 /* Connected+CoreDataProperties.swift in Sources */,
+				59FADFB3201CF645005AB594 /* Checking_Internet_Functions.swift in Sources */,
+				59FADFAD201CF425005AB594 /* Internet_Down_TimingTblVC.swift in Sources */,
 				59FADF90201CE2DF005AB594 /* CheckInternet.xcdatamodeld in Sources */,
+				59D49B8A201EFF0C00989623 /* Connected+CoreDataClass.swift in Sources */,
+				59FADFAB201CE323005AB594 /* Check_InternetVC.swift in Sources */,
+				59C0EB0B201D33F000D4B055 /* ConnectedTimeCell.swift in Sources */,
+				59C0EB08201D08F200D4B055 /* InternetDown+CoreDataProperties.swift in Sources */,
 				59FADF88201CE2DF005AB594 /* AppDelegate.swift in Sources */,
+				59C0EB07201D08F200D4B055 /* InternetDown+CoreDataClass.swift in Sources */,
+				59FADFB1201CF48A005AB594 /* Internet_Down_TimingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

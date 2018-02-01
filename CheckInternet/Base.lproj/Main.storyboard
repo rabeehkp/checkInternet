@@ -1,24 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c46-fQ-aUN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cochin.ttc">
+            <string>Cochin-BoldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--NetChecker-->
+        <scene sceneID="uUA-jq-XAo">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Cw6-7N-vmc" customClass="Check_InternetVC" customModule="CheckInternet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4QB-hm-0A7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krx-IV-V8g">
+                                <rect key="frame" x="0.0" y="576" width="375" height="41"/>
+                                <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Cochin-BoldItalic" family="Cochin" pointSize="25"/>
+                                <state key="normal" title="check Internet ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="check_Internet:" destination="Cw6-7N-vmc" eventType="touchUpInside" id="5dO-4O-Mec"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastDownTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2I-ib-niN">
+                                <rect key="frame" x="0.0" y="272" width="375" height="138"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="138" id="1SZ-vT-ZXj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deM-QF-om3">
+                                <rect key="frame" x="274" y="98" width="85" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Loy-7n-KLI">
+                                        <rect key="frame" x="0.0" y="0.0" width="85" height="47"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.433349609375" green="0.016221788194444444" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Loy-7n-KLI" secondAttribute="trailing" id="2mL-Sw-b6h"/>
+                                    <constraint firstItem="Loy-7n-KLI" firstAttribute="top" secondItem="deM-QF-om3" secondAttribute="top" id="hsa-f7-whZ"/>
+                                    <constraint firstItem="Loy-7n-KLI" firstAttribute="leading" secondItem="deM-QF-om3" secondAttribute="leading" id="qrC-8h-dAo"/>
+                                    <constraint firstAttribute="bottom" secondItem="Loy-7n-KLI" secondAttribute="bottom" id="yya-L0-wTp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.51380750868055558" blue="0.78439670138888884" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="deM-QF-om3" firstAttribute="top" secondItem="ITm-x7-7QR" secondAttribute="top" constant="34" id="76o-ob-jlJ"/>
+                            <constraint firstItem="P2I-ib-niN" firstAttribute="centerX" secondItem="4QB-hm-0A7" secondAttribute="centerX" id="7Bk-vn-wL1"/>
+                            <constraint firstItem="P2I-ib-niN" firstAttribute="centerY" secondItem="4QB-hm-0A7" secondAttribute="centerY" constant="7.5" id="9mv-2Z-uUV"/>
+                            <constraint firstItem="ITm-x7-7QR" firstAttribute="bottom" secondItem="Krx-IV-V8g" secondAttribute="bottom" constant="50" id="Epc-rq-hN8"/>
+                            <constraint firstItem="deM-QF-om3" firstAttribute="centerY" secondItem="4QB-hm-0A7" secondAttribute="centerY" constant="-212" id="FSi-gB-UOJ"/>
+                            <constraint firstItem="P2I-ib-niN" firstAttribute="trailing" secondItem="ITm-x7-7QR" secondAttribute="trailing" id="Mts-b8-E9r"/>
+                            <constraint firstItem="P2I-ib-niN" firstAttribute="leading" secondItem="ITm-x7-7QR" secondAttribute="leading" id="V1P-Jl-IjB"/>
+                            <constraint firstItem="Krx-IV-V8g" firstAttribute="trailing" secondItem="ITm-x7-7QR" secondAttribute="trailing" id="XgN-JG-c9l"/>
+                            <constraint firstItem="deM-QF-om3" firstAttribute="centerX" secondItem="4QB-hm-0A7" secondAttribute="centerX" constant="129" id="bcK-Vn-yc8"/>
+                            <constraint firstItem="deM-QF-om3" firstAttribute="trailing" secondItem="ITm-x7-7QR" secondAttribute="trailing" constant="-16" id="g1a-Hf-c5V"/>
+                            <constraint firstItem="Krx-IV-V8g" firstAttribute="leading" secondItem="ITm-x7-7QR" secondAttribute="leading" id="rhW-IP-uFU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ITm-x7-7QR"/>
                     </view>
+                    <navigationItem key="navigationItem" title="NetChecker" id="Waz-JI-TdW">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="JVC-O3-1cK"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ShowTimeLbl" destination="P2I-ib-niN" id="ANL-Fy-Hbk"/>
+                        <outlet property="check_Internet_Button" destination="Krx-IV-V8g" id="WeL-8S-mxt"/>
+                        <outlet property="networkStatus" destination="deM-QF-om3" id="Xwa-6X-gsQ"/>
+                        <outlet property="statusLbl" destination="Loy-7n-KLI" id="jyv-AF-62c"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CI1-nZ-Cz2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-153" y="-215"/>
+        </scene>
+        <!--Internet Down Timing TblVC-->
+        <scene sceneID="EPP-4q-m5N">
+            <objects>
+                <tableViewController storyboardIdentifier="Internet_Down_TimingTblVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qyg-ga-nLW" customClass="Internet_Down_TimingTblVC" customModule="CheckInternet" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGB-ed-B28">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.16841414570808411" green="0.65448594093322754" blue="0.99105578660964966" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="internet_Down_Cell" id="whv-m1-pnE" customClass="Internet_Down_TimingCell" customModule="CheckInternet">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="whv-m1-pnE" id="Gc9-QP-xd4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet_Down_Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSI-NE-DAP">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="hSI-NE-DAP" firstAttribute="top" secondItem="Gc9-QP-xd4" secondAttribute="top" id="ReE-77-qph"/>
+                                        <constraint firstItem="hSI-NE-DAP" firstAttribute="leading" secondItem="Gc9-QP-xd4" secondAttribute="leading" constant="16" id="TdP-vP-QIU"/>
+                                        <constraint firstAttribute="trailing" secondItem="hSI-NE-DAP" secondAttribute="trailing" constant="16" id="UtQ-b8-CyW"/>
+                                        <constraint firstAttribute="bottom" secondItem="hSI-NE-DAP" secondAttribute="bottom" id="kqs-jd-nWT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.23934546113014221" green="0.17611166834831238" blue="0.62822633981704712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="internetDown_TimeLbl" destination="hSI-NE-DAP" id="wTe-D3-beD"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="connectedTimeCell" id="c8R-rG-Ouq" customClass="ConnectedTimeCell" customModule="CheckInternet">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c8R-rG-Ouq" id="RVM-xJ-TOr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected_Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wld-EZ-E7F">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Wld-EZ-E7F" firstAttribute="leading" secondItem="RVM-xJ-TOr" secondAttribute="leading" constant="16" id="TdM-Yq-XLx"/>
+                                        <constraint firstAttribute="bottom" secondItem="Wld-EZ-E7F" secondAttribute="bottom" id="VGN-gX-SU8"/>
+                                        <constraint firstItem="Wld-EZ-E7F" firstAttribute="top" secondItem="RVM-xJ-TOr" secondAttribute="top" id="Vkc-Ne-uFc"/>
+                                        <constraint firstAttribute="trailing" secondItem="Wld-EZ-E7F" secondAttribute="trailing" constant="16" id="vfL-7l-7rn"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.23934546113014221" green="0.17611166834831238" blue="0.62822633981704712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="internetConnected_TimeLbl" destination="Wld-EZ-E7F" id="Hn8-O9-dkk"/>
+                                    <outlet property="internetDown_TimeLbl" destination="Wld-EZ-E7F" id="Q2S-so-sE7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qyg-ga-nLW" id="dQT-Cb-1Rj"/>
+                            <outlet property="delegate" destination="qyg-ga-nLW" id="sOc-5V-SUD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AqW-Et-QZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="-215"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H26-WF-aMA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c46-fQ-aUN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v4u-3M-pPl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.4333496094" green="0.016221788189999999" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                            <color key="textColor" red="0.53374565967499998" green="0.98822699656388879" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Cw6-7N-vmc" kind="relationship" relationship="rootViewController" id="0sw-gz-qSg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJz-ze-Iop" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-858" y="-215"/>
         </scene>
     </scenes>
 </document>
